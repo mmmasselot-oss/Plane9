@@ -1,0 +1,98 @@
+body {
+    background-color: #f5f7fa;
+    color: black;
+    text-align: justified;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: gray;
+    margin-top: 50px;
+}
+
+.texte {
+    margin-left:10em;
+    margin-right:10em;
+}
+
+.lettrine {
+    font-size: 400%;
+    float: left;
+    color: blue;
+    margin: -0.20em 0px -0.20em 0px;
+}
+
+.m div {
+	display:flex;
+	flex-direction: row; /* pour mettre deux élements côte à côte */
+	align-items: center;
+	height:200px;
+}
+
+.m aside {
+	width:20%;
+	float:left;
+	height:50%;
+	margin-top:80px;
+}
+
+.m img {
+	width:500px;
+	height:auto;
+	display:block; 
+	margin:auto;
+}
+
+.m header {
+	height:50px;
+	clear:both;
+}
+
+.m footer {
+	height:50px; 
+	clear:both;
+}
+
+.n {
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    height:170px;
+}
+.n aside {
+    width:40%;
+    height:30%;
+    display:flex;
+    align-items:center;
+    margin-bottom:80px;
+}
+
+.n section {
+}
+
+.n img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display:block; 
+    margin-left: 40px;
+    margin-right:10px;
+    margin-bottom:80px;
+}
+
+.n header {
+	height:auto;
+	clear:both;
+}
+
+.n footer {
+	height:70px; 
+	clear:both;
+}
+

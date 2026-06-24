@@ -1,0 +1,24 @@
+body{
+    margin: 10em;
+}
+
+.navbar ul{
+    list-style-type:none ;
+    background-color: hsl(212, 59%, 40%);
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover{
+    background-color: hsl(203, 92%, 19%)
+}
+
+

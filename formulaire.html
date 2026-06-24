@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="keywords" content="plane9"/>
+      <meta name="description" content="page de présentation du logiciel Plane9"/>
+        <title>Plane9</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+      <div class="texte">
+	<h1>Introduction à Plane9</h1>
+	<h2>Présentation</h2>
+ 
+    <div class="m">
+    <aside class="m"> 
+      
+        <span class=lettrine>P</span>LANE9 est un visualiseur 3D qui permet de synchroniser des scènes visuelles à de la musique choisie.
+        </aside>
+   
+  <img class="m" src="polarize.png" alt="exemple d'image Plane_9 Studio">
+      </div>
+        <h2>Installation</h2>
+	Plane9 est un logiciel pour Windows.
+	<ul>
+	  <li> Téléchargez Plane9 depuis <a href="https://www.plane9.com/">le site officiel</a> et installez-le sur votre ordinateur.</li>
+	  <li> Installez x264 vfw depuis <a href="https://sourceforge.net/projects/x264vfw/">ce site</a>.</li>
+	  <li> Téléchargez ffmpeg depuis <a href="https://www.gyan.dev/ffmpeg/builds/">ce site</a> (ffmpeg-git-essentials.7z) ; extrayez ffmpeg.exe du dossier bin et placez-le dans un dossier sur votre ordinateur.</li>
+	</ul>
+	<h2>Utilisation</h2>
+	Ouvrez Plane9 Studio (Programmes (x86)).
+     <header class="n">
+         <ul>
+         <li>Cliquez sur "New playlist" ; si vous voulez la renommer double-cliquez dessus (puis faites Entrée).</li>
+         </ul>
+        </header>
+        <div class="n">
+            <aside> 
+             <ul>   
+	  <li> Faites glisser des scènes vers le bas en les ajoutant une à une. Certaines scènes peuvent se superposer, c'est le cas des scènes Foreground, Background et Postprocessing par exemple. Entre deux scènes vous pouvez placer une scène de transition.</li>
+                </ul>
+            </aside>
+            <section>
+      <img src="plane_9_studio.png" alt="faire glisser des scènes sur Plane_9_Studio">
+            </section>
+        </div>
+        
+   <footer class="n">
+       <ul>
+      <li> Pour avoir un aperçu d'une scène, double-cliquez dessus (puis pour en sortir bougez la souris) </li>
+	  <li> En dessous des scènes réglez la durée souhaitée (par défaut 2 secondes).</li>
+	  <li>Une fois vos scènes agencées, cliquez sur Record. Dans le premier champ cliquez sur Browse pour sélectionner votre musique (au format mp3). Puis dans le champ "Video output file" cliquez sur Browse pour déterminer où sera enregistrée la vidéo produite et son nom. Dans le champ suivant ("Location of ffmpeg"), retrouvez ffmpeg.exe là où vous l'avez mis précédemment. Enfin, cliquez sur "Record preview video" (ou sur "Record Video" pour la version finale) pour commencer à synchroniser la musique et les scènes. Une fenêtre blanche apparait avec la durée d'attente restante dans son titre.</li>
+	  <li>Une fois la synchronisation terminée, la fenêtre se ferme automatiquement et vous pouvez cliquer sur "View recorded video". </li>
+	  </ul>
+    </footer>
+	<h2>Donnez votre avis</h2>
+	<form method="post"
+	action="envoyer.php">
+    <p> Date :
+    <input type="date" name="date">
+	<p>Quel est votre OS ?
+	<input type="checkbox" name="Windows"> Windows
+	<input type="checkbox" name="Linux"> Linux
+	<input type="checkbox" name="MacOS"> MacOS
+	<input type="checkbox" name="ChromeOS"> Chrome OS
+	<input type="checkbox" name="BSD/Unix"> BSD/Unix
+	<p>Avez-vous pu faire fonctionner Plane9 ?
+	<input type="radio" name="fonctionné" value="oui" /> oui
+	<input type="radio" name="fonctionné" value="non" /> non
+	<input type="radio" name="fonctionné" value="nonconcerné" /> non concerné
+    <p> Votre email ?
+    <input type="text" name="email" width=4cm/>
+    <p> Vos commentaires ?
+    <p><textarea name="commentaires" rows="3" cols="60"></textarea> 
+	<p><input type="submit">
+	</form>
+	
+</div>
+        
+    </body>
+
+</html>
