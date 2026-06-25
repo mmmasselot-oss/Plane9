@@ -3,7 +3,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-
+	<meta name="keywords" content="plane9"/>
+	<meta name="description" content="page de présentation du logiciel Plane9"/>
+	<meta name="author" content="Marina Masselot"/>
         <title>Plane9</title>
         <link rel="stylesheet" href="style.css">
 
@@ -12,7 +14,7 @@
     <body>
       <script type="text/javascript">
 	
-	function toggle_visibility(id) {
+	function toggle_visibility(id) { <!-- pour afficher ou cacher alternativement un élément-->
 	    var e = document.getElementById(id);
 	    e.style.display = ((e.style.display!='none') ? 'none' : 'block');
 	} 
@@ -83,7 +85,7 @@
     
     
     <script>
-var myImage= new Array(); 
+var myImage= new Array(); <-- on stocke les images pour y accéder par indice-->
       myImage[0]="polarize2.png";       
       myImage[1]="tmh.png";
       myImage[2]="sunset.png";
@@ -97,15 +99,15 @@ var ImageCnt = 0;
 
 document.getElementById("img1").src = myImage[ImageCnt];
       
-function suivante(){
+function suivante(){ <!-- pour faire défiler l image suivante -->
 ImageCnt++;
-if (ImageCnt >= 8) {
-          ImageCnt = 0; 
+if (ImageCnt >= 8) {<!-- si on est arrivé à la fin -->
+		    ImageCnt = 0; <!-- on retourne au début -->
         }
-    document.getElementById("img1").src = myImage[ImageCnt];
+    document.getElementById("img1").src = myImage[ImageCnt]; <!-- on charge la nouvelle image-->
 }
 
-function précédente(){
+function précédente(){ <!-- la même fonction dans l autre sens-->
 ImageCnt--;
 if (ImageCnt < 0) {
           ImageCnt = 7;
@@ -143,6 +145,7 @@ if (ImageCnt < 0) {
 
 
 </div>
+   
     </body>
 
 </html>
